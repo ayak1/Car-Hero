@@ -13,7 +13,7 @@ const Hero = () => {
   };
   return (
     <main style={BGhero} >
-      <div className=" bg-gradient-to-r  from-primary to to-primaryDark/90 ">
+      <div className="overflow-hidden bg-gradient-to-r from-primary to to-primaryDark/90">
         {/* Navbar section */}
         <Navbar />
         <div className="min-h-[600px] container grid grid-cols-1 md:grid-cols-2 place-items-center">
@@ -29,7 +29,7 @@ const Hero = () => {
                 stiffness: 100,
                 damping: 10,
               }}
-               className="text-4xl md:text-7xl leading-tight uppercase">
+               className="text-4xl leading-tight uppercase md:text-7xl">
                 Honda <br />{" "}
                 <span className="text-transparent text-outline">Sports EV</span>{" "}
               </motion.h1>
@@ -43,10 +43,10 @@ const Hero = () => {
                stiffness: 100,
                damping: 10,
              }}
-              className="outline-btn flex justify-center items-center gap-4 group"
+              className="flex items-center justify-center gap-4 outline-btn group"
             >
               Explore{" "}
-              <FaArrowRight className="group-hover:translate-x-2 transition" />{" "}
+              <FaArrowRight className="transition group-hover:translate-x-2" />{" "}
             </motion.button>
             <motion.div
             initial={{ opacity: 0, y: 100 }}
@@ -60,7 +60,7 @@ const Hero = () => {
             }}
               className="text-left bg-primaryDark/80 p-6 space-y-2 lg:max-w-[350px] !mt-[60px]"
             >
-              <h1 className="uppercase text-xl ">Vehicle features</h1>
+              <h1 className="text-xl uppercase ">Vehicle features</h1>
               <p className="text-xs leading-loose">
                 The car features rear-hinged suicide doors. Yuki Terai is
                 credited with the exterior design. The interior fits four
@@ -92,7 +92,7 @@ const Hero = () => {
               transition={{
                 duration: 1,                
               }}
-               src={Car} alt="" className="w-full relative z-30" />
+               src={Car} alt="" className="relative z-30 w-full" />
               {/* Ring light */}
               <motion.div
               initial={{ opacity: 0, y:0, scale: 0.5 }}
